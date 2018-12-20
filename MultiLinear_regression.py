@@ -116,13 +116,13 @@ if __name__ == '__main__':
     # Load the Excel file, with the first column as index and first row as header
     data = pd.read_excel(InputFile, index_col=0)
     
-    # Get all available features
+    # Print out all available features
     Items = list(data.keys())
-    
-    # Prompt user for one feature as y-axis data
-    print('Input the one feature as y-axis data:')
     for index, item in enumerate(Items):
         print('{:>2}: {:<}'.format(index+1, item))
+        
+    # Prompt user for one feature as y-axis data
+    print('Input one number of the feature as y-axis data:')
     while True:
         try:
             YFeature = Items[int(input('>>> ').split()[0]) - 1]
