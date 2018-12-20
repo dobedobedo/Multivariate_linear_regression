@@ -134,8 +134,6 @@ if __name__ == '__main__':
     
     # Prompt user for features as x-axis data
     print('Input the feature(s) as x-axis data:')
-    for index, item in enumerate(Items):
-        print('{:>2}: {:<}'.format(index+1, item))
     print('e.g.: "1-3" to select 1 to 3; 1 3 to select 1 and 3')
     
     while True:
